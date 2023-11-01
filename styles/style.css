@@ -2,7 +2,7 @@
   width: 100%;
   max-width: 1440px;
   margin: 0 auto;
-}  /* 123 */
+}
 
 .header {
   display: grid;
@@ -29,10 +29,8 @@
   margin-right: 8px;
 }
 
-
 ul :first-child {
   list-style: none;
-  
 }
 
 .header__links-list-item_none .header__link {
@@ -57,4 +55,4 @@ ul :first-child {
 .header__address {
   font-size: 18px;
   line-height: 24.3px;
-}
+} /* 333 */
