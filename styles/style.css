@@ -59,7 +59,7 @@ ul :first-child {
 .cover {
   display: flex;
   flex-direction: column;
-  background-image: url(/images/cover.jpg);
+  background-image: url(./images/cover.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -139,3 +139,4 @@ ul :first-child {
   border: 1px solid #fff;
   padding: 11px 32px;
 }
+/* 555 */
