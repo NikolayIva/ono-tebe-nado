@@ -9,8 +9,7 @@
   grid-template-columns: 1fr 135px 1fr;
   grid-template-rows: 109px;
   align-items: center;
-  margin-top: 93px;
-  /* border: 1px solid red; */
+  margin: 92px auto 92px;
 }
 
 .header__menu {
@@ -55,4 +54,88 @@ ul :first-child {
 .header__address {
   font-size: 18px;
   line-height: 24.3px;
-} /* 333 */
+}
+
+.cover {
+  display: flex;
+  flex-direction: column;
+  background-image: url(/images/cover.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  max-width: 1440px;
+}
+
+.overlay {
+  background-color: rgb(0 0 0 / 0.6);
+  position: absolute;
+  width: 1440px;
+  height: 757px;
+  z-index: 1;
+}
+
+.cover__title {
+  color: #fff;
+  font-size: 100px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 30px;
+  padding: 165px 50px 135px;
+  z-index: 2;
+}
+
+.aligned-text {
+  display: block;
+  text-align: left;
+  line-height: 115%;
+}
+
+.aligned-text_center {
+  display: block;
+  text-align: center;
+  line-height: 100%;
+  margin: 20px 0 20px;
+}
+
+.aligned-text_right {
+  display: block;
+  text-align: right;
+  line-height: 100%;
+}
+
+.letter-spacing-extended {
+  letter-spacing: 60px;
+}
+
+.no-letter-spacing {
+  letter-spacing: 0;
+}
+
+.cover__description {
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+  align-items: center;
+  gap: 77px;
+  /* flex-wrap: nowrap; нужен ли?  */
+  color: #fff;
+  font-size: 22px;
+  line-height: 28px;
+  text-transform: uppercase;
+  padding: 0 50px 50px 0;
+  z-index: 2;
+}
+
+.cover__description-text {
+  word-spacing: 17px;
+}
+
+.cover__description-text-span {
+  word-spacing: 22px;
+}
+
+.bet-button {
+  border: 1px solid #fff;
+  padding: 11px 32px;
+}

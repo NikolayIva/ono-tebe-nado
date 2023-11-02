@@ -29,10 +29,16 @@ a {
   color: inherit;
 }
 
+button {
+  all: unset;
+}
+
 img {
   width: 100%;
 }
 
-address {  /* сброс стилей тега address */
+address {
   font-style: normal
-} /* 333 */
+} /* 444 */
+
+
