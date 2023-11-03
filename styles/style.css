@@ -56,7 +56,7 @@ ul :first-child {
 
 .address {
   font-size: 18px;
-  line-height: 24.3px;
+  line-height: 1.35em;
 }
 
 .cover {
@@ -67,7 +67,7 @@ ul :first-child {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  
+
   margin-bottom: 180px;
 }
 
@@ -94,20 +94,20 @@ ul :first-child {
 .aligned-text {
   display: block;
   text-align: left;
-  line-height: 115%;
+  line-height: 1.15em;
 }
 
 .aligned-text_center {
   display: block;
   text-align: center;
-  line-height: 100%;
+  line-height: 1em;
   margin: 20px 0 20px;
 }
 
 .aligned-text_right {
   display: block;
   text-align: right;
-  line-height: 100%;
+  line-height: 1em;
 }
 
 .letter-spacing-extended {
@@ -126,7 +126,7 @@ ul :first-child {
   gap: 77px;
   color: #fff;
   font-size: 22px;
-  line-height: 28px;
+  line-height: 1.27273em;
   text-transform: uppercase;
   padding: 0 50px 50px 0;
   z-index: 2;
@@ -173,7 +173,7 @@ ul :first-child {
   flex-direction: column;
   flex-grow: 1;
   width: 430px;
-  height: 450px;
+  min-height: 450px;
 }
 
 .card-link {
@@ -187,7 +187,7 @@ ul :first-child {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  width: 430px;
+  width: 100%;
   height: 100%;
 }
 
@@ -216,7 +216,7 @@ ul :first-child {
   color: #fff;
   font-size: 22px;
   font-weight: 700;
-  line-height: 120%;
+  line-height: 1.2em;
   text-decoration-line: underline;
   text-decoration-thickness: 1px;
   text-transform: uppercase;
@@ -228,7 +228,7 @@ ul :first-child {
 .card__text {
   color: #fff;
   font-size: 20px;
-  line-height: 120%;
+  line-height: 1.2em;
   margin: 0 40px 50px;
   z-index: 2;
 }
