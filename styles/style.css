@@ -6,14 +6,14 @@
 
 .header {
   display: grid;
-  grid-template-columns: 1fr 135px 1fr;
-  grid-template-rows: 109px;
+  grid-template-columns: 1fr min-content 1fr;
+
   align-items: center;
-  margin: 92px auto 92px;
+  margin: 92px auto 96px;
 }
 
 .header__menu {
-  padding-left: 51px;
+  padding-left: 50px;
 }
 
 .header__links-list {
@@ -28,12 +28,13 @@
   margin-right: 8px;
 }
 
-ul :first-child {
+.header__links-list-item-first {
   list-style: none;
 }
 
-.header__link_active .header__link {
+.header__link_active {
   text-decoration: none;
+  list-style: none;
 }
 
 .header__link {
@@ -43,20 +44,31 @@ ul :first-child {
 
 .header__logo {
   display: block;
+  width: 129.11px;
+  height: 104.65px;
+  text-decoration: none;
+}
+
+.header__logo-image {
   width: 100%;
   height: 100%;
-  text-decoration: none;
 }
 
 .header__address {
   display: flex;
   justify-content: end;
-  padding-right: 53px;
+  padding-right: 50px;
 }
 
 .address {
   font-size: 18px;
   line-height: 1.35em;
+  max-width: 240px; /* возможно ширину в других единицах указать */
+}
+
+.address__link {
+  text-underline-offset: 4.5px;
+  text-decoration-thickness: 1px;
 }
 
 .cover {
@@ -67,7 +79,6 @@ ul :first-child {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-
   margin-bottom: 180px;
 }
 
@@ -82,6 +93,9 @@ ul :first-child {
 }
 
 .cover__title {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
   color: #fff;
   font-size: 100px;
   font-weight: 700;
@@ -101,7 +115,6 @@ ul :first-child {
   display: block;
   text-align: center;
   line-height: 1em;
-  margin: 20px 0 20px;
 }
 
 .aligned-text_right {
@@ -141,7 +154,7 @@ ul :first-child {
 }
 
 .bet-button {
-  border: 1px solid #fff;
+  border: 1px solid currentColor;
   padding: 11px 32px;
 }
 
@@ -189,27 +202,21 @@ ul :first-child {
   justify-content: space-between;
   width: 100%;
   height: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
 .card_type_film {
   background-image: url(../images/card-lot-01.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
 }
 
 .card_type_book {
   background-image: url(../images/card-lot-02.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
 }
 
 .card_type_picture {
   background-image: url(../images/card-lot-03.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
 }
 
 .card__title {
@@ -221,7 +228,7 @@ ul :first-child {
   text-decoration-thickness: 1px;
   text-transform: uppercase;
   text-underline-offset: 3px;
-  margin: 50px 40px 0; /* возможно есть иные варианты выравнивания */
+  margin: 50px 40px 0;
   z-index: 2;
 }
 
@@ -244,12 +251,12 @@ ul :first-child {
 .about {
   display: grid;
   grid-template-columns: 430px 1fr;
-  grid-template-rows: 487px;
+
   gap: 25px;
   margin: 0 50px 180px;
 }
 
-.about__column-left {
+.about__column-logo {
   display: flex;
   justify-content: center;
   align-items: start;
@@ -270,7 +277,7 @@ ul :first-child {
   height: 114px;
 }
 
-.about__column-right {
+.about__column-text {
   display: flex;
   flex-direction: column;
   justify-content: start;
@@ -281,18 +288,21 @@ ul :first-child {
   font-size: 40px;
   font-weight: 700;
   text-transform: uppercase;
-  margin: 101px 0 73px;
+  margin: 100px 0;
 }
 
 .about__text {
   font-size: 20px;
-  margin-top: 26px;
+  margin-bottom: 25px;
+}
+
+.about__text:last-child {
+  margin-bottom: 0;
 }
 
 .footer {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: 97px;
   margin-bottom: 90px;
   padding: 0 50px;
 }
@@ -318,7 +328,7 @@ ul :first-child {
   text-underline-offset: 4.5px;
 }
 
-.footer__menu-link_active .footer__menu-link {
+.footer__menu-link_active {
   text-decoration: none;
 }
 
